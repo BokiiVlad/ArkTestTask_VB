@@ -5,12 +5,10 @@ import FullReload from 'vite-plugin-full-reload';
 import SortCss from 'postcss-sort-media-queries';
 
 export default defineConfig(({ command }) => {
-  // Vercel під час білді виставляє змінну середовища VERCEL
   const isVercel = process.env.VERCEL === '1' || process.env.VERCEL === 'true';
 
   return {
-    // ГОЛОВНЕ: для Vercel -> '/', для GitHub Pages -> '/ArkTestTask_VB/'
-    base: command === 'serve' || isVercel ? '/' : '/ArkTestTask_VB/',
+    base: '/',
 
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
