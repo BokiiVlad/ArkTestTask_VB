@@ -1,4 +1,12 @@
 import initTimer from './js/timer.js';
+import faviconUrl from './assets/img/favicon.ico';
+
+const link = document.createElement('link');
+link.rel = 'icon';
+link.type = 'image/x-icon';
+link.href = faviconUrl;
+
+document.head.appendChild(link);
 
 async function loadMain() {
 
