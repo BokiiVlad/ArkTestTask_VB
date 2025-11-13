@@ -1,0 +1,21 @@
+.pachino-btn {
+  background-color: #ef3333 !important;
+  transition: all 0.2s ease-in 0s !important;
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 8px;
+  border-radius: 10px;
+  border: 2px solid #ef3d3d;
+  width: 100%;
+  max-width: 448px;
+  margin: 0 auto;
+}
+
+.pachino-btn:hover {
+  color: #fff !important;
+  background-color: #f52b2b !important;
+  transform: scale(1.1) !important;
+}

@@ -1,0 +1,386 @@
+/* Reset ============================================ */
+.comments* {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  font-family: inherit !important;
+  font-size: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* Основний блок коментарів */
+.comments {
+  position: relative !important;
+  max-width: 780px !important;
+  margin: 0 auto 30px auto !important;
+}
+
+.comments > * {
+  box-sizing: border-box !important;
+}
+
+.comments__item.hidden {
+  display: none !important;
+}
+
+/* Заголовок */
+.comments__header {
+  position: relative !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  gap: 5px !important;
+  margin-bottom: 30px !important;
+}
+
+.comments__header::before {
+  content: '' !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 2px !important;
+  background-color: #eeee !important;
+}
+
+.comments__left-box {
+  margin-bottom: 20px;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  gap: 5px !important;
+  padding: 4px 0 !important;
+  border-bottom: 2px solid #9faeb5 !important;
+  z-index: 1 !important;
+}
+
+.comments__header-count,
+.comments__header-title {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  color: rgb(65, 65, 65) !important;
+}
+
+/* Права частина заголовка */
+.comments__right-box {
+  position: relative !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  gap: 25px !important;
+  padding: 10px 0 !important;
+  z-index: 1 !important;
+}
+
+.comments__right-box > a {
+  box-shadow: none !important;
+}
+
+.comments__header-icon path {
+  transition: all 0.2s ease-in-out !important;
+}
+
+.comments__header-icon:hover path {
+  fill: #5f95ad !important;
+}
+
+/* Список коментарів */
+.comments__item-list {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 30px !important;
+}
+
+.comments__item {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+  margin-bottom: 10px;
+}
+
+/* Хедери елементів */
+.comments__item-header {
+  display: flex !important;
+  gap: 15px !important;
+}
+
+.comments__item-header.hidden {
+  display: none !important;
+}
+
+.comments__item-avatar.hidden {
+  display: none !important;
+}
+
+/* Інформація про автора */
+.comments__item-info {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 7px !important;
+  max-height: 50px !important;
+}
+
+.comments__item-name {
+  margin: 0 !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  color: rgb(65, 65, 65) !important;
+  text-transform: capitalize !important;
+  line-height: 1 !important;
+}
+
+.comments__item-data {
+  margin: 0 !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  color: #9faeb5 !important;
+}
+
+.comments__item-data-now {
+  color: rgb(41, 187, 12) !important;
+}
+
+.comments__item-data.hidden {
+  display: none !important;
+}
+
+/* Тіло коментаря */
+.comments__item-body {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 15px !important;
+}
+
+.comments__item-content {
+  font-size: 16px !important;
+  line-height: 1.3 !important;
+  color: rgb(65, 65, 65) !important;
+}
+
+.comments__item-content.hidden {
+  display: none !important;
+}
+
+.comments__item-content--printing {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+}
+
+.comments__item-picture.hidden,
+.comments__item-img.hidden,
+.comments__item-video.hidden {
+  display: none !important;
+}
+
+.comments__item-img,
+.comments__item-video {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+}
+
+.comments__item-gif {
+  width: 50px !important;
+  height: 50px !important;
+  padding-top: 10px !important;
+}
+
+/* Футер коментаря */
+.comments__item-footer {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+.comments__item-footer.hidden {
+  display: none !important;
+}
+
+.comments__item-replay {
+  border: none !important;
+  font-size: 18px !important;
+  color: #9faeb5 !important;
+  text-decoration: none !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+.comments__item-replay:hover {
+  color: #5f95ad !important;
+}
+
+/* Відповіді */
+.comments__item-answer {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 30px !important;
+  margin-top: 15px !important;
+  margin-left: 15px !important;
+  padding-left: 15px !important;
+  border-left: 1px solid #c3c3c3 !important;
+}
+
+/* Форма коментаря */
+.comments__form {
+  position: relative !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+  height: 210px !important;
+  max-width: 780px !important;
+  margin: 30px auto 0 auto !important;
+  padding: 15px !important;
+  border: 1px solid #9faeb5 !important;
+  border-radius: 5px !important;
+  background-color: #fff !important;
+  transition: all 0.4s linear !important;
+}
+
+.comments__form.hidden {
+  height: 0 !important;
+  opacity: 0 !important;
+}
+
+.comment__form-img {
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 50% !important;
+}
+
+.comments__form-fields {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+  width: 100% !important;
+}
+
+.comments__form-input {
+  width: 100% !important;
+  height: 40px !important;
+  padding: 5px 10px !important;
+  border: 1px solid #9faeb5 !important;
+  border-radius: 5px !important;
+  font-size: 14px !important;
+}
+
+.comments__form-input--text {
+  height: 80px !important;
+  padding-top: 10px !important;
+}
+
+.comments__form-input.error {
+  border: 1px solid red !important;
+}
+
+.comments__form-btn {
+  cursor: pointer !important;
+  width: 100% !important;
+  height: 40px !important;
+  border: none !important;
+  border-radius: 5px !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  background-color: #388e3c !important;
+  color: #fff !important;
+  transition: background-color 0.2s linear !important;
+}
+
+.comments__form-btn:hover {
+  background-color: #2bac31 !important;
+}
+
+/* Медіа-запити */
+@media (min-width: 576px) {
+  .comments__item-name {
+    font-size: 20px !important;
+  }
+  .comments__item-data {
+    font-size: 16px !important;
+  }
+  .comments__item-content {
+    font-size: 18px !important;
+  }
+  .comments__item-img,
+  .comments__item-video {
+    max-width: 350px !important;
+  }
+  .comments__form-btn {
+    width: 150px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .comments__header-count,
+  .comments__header-title {
+    font-size: 20px !important;
+  }
+}
+
+/* Facebook стиль */
+.comments-fb .comments__item {
+  padding: 16px 18px !important;
+  border-radius: 5px !important;
+  background: rgba(114, 168, 211, 0.2) !important;
+}
+
+.comments-fb .comments__item .startdate,
+.comments-fb .comments__item .nowdate {
+  color: grey;
+  font-size: 14px;
+}
+
+.comments-fb .comments__header {
+  margin-bottom: 0 !important;
+}
+
+.comments-fb .comments__item-list {
+  gap: 2px !important;
+}
+
+.comments-fb .comments__form {
+  background-color: #edeff4 !important;
+  border: none !important;
+  margin-top: 2px !important;
+}
+
+.comments-fb .comments__form-btn {
+  background-color: #2156b9 !important;
+}
+
+.comments-fb .comments__form-btn:hover {
+  background-color: #2156b9 !important;
+}
+
+.comments-fb .comment__form-img {
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 0 !important;
+}
+
+.comments-fb .comments__item.reply {
+  margin-left: 16px !important;
+  background: #d1ecff !important;
+  margin-bottom: 0 !important;
+}
+
+.comm-obert-reply {
+  margin-left: 36px;
+  border-left: 1px dotted #515151;
+  margin-bottom: 20px;
+}
+
+.comments-fb .comments__item-avatar {
+  margin: 0 !important;
+  object-fit: cover !important;
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 32px !important;
+  border: 2px solid #e89f89 !important;
+}
+
+.comments__item-content img {
+  margin: 7px 0 0 0;
+}

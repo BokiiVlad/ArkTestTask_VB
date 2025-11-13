@@ -1,0 +1,201 @@
+/* Reset для CTA */
+.cta * {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  font-size: 100% !important;
+  font-family: inherit !important;
+  box-sizing: border-box !important;
+  text-indent: 0 !important;
+  line-height: 1.3 !important;
+  box-shadow: none !important;
+}
+
+/* Блок CTA */
+.cta {
+  max-width: 780px !important;
+  margin: 25px auto !important;
+}
+
+/* Замовлення */
+.order {
+  position: relative !important;
+  display: none !important;
+  min-width: 270px !important;
+  max-width: 450px !important;
+  margin: 0 auto !important;
+  padding: 15px !important;
+  background-color: #fff !important;
+}
+
+.order.active {
+  display: block !important;
+}
+
+/* Заголовок замовлення */
+.order__header {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 20px !important;
+  margin-bottom: 30px !important;
+  font-size: 18px !important;
+  text-align: center !important;
+}
+
+/* Зображення замовлення */
+.order__img {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 250px !important;
+  margin: 0 auto !important;
+}
+
+/* Текст замовлення */
+.order__text {
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  text-align: center !important;
+  line-height: 1.3 !important;
+  margin-bottom: 15px !important;
+}
+
+.order__text:nth-child(2) {
+  margin-bottom: 5px !important;
+}
+
+/* Час та ціна */
+.order__time {
+  font-weight: 700 !important;
+  font-size: 24px !important;
+  text-align: center !important;
+  color: red !important;
+  line-height: 1.3 !important;
+}
+
+.order__price {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 10px !important;
+  font-size: 20px !important;
+  line-height: 1.3 !important;
+}
+
+.order__price-old {
+  font-weight: 700 !important;
+  text-decoration: line-through !important;
+}
+
+.order__price-new {
+  font-weight: 700 !important;
+  color: red !important;
+}
+
+.order__price-new .order__price-summ,
+.order__price-new .order__price-curr {
+  font-size: 24px !important;
+}
+
+.order__price-zero {
+  text-transform: uppercase !important;
+}
+
+/* Тіло замовлення */
+.order__body {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 15px !important;
+  width: 100% !important;
+  margin-bottom: 15px !important;
+  text-align: center !important;
+}
+
+/* Інпут */
+.order__input {
+  width: 100% !important;
+  height: 55px !important;
+  padding: 15px !important;
+  border: none !important;
+  border-radius: 35px !important;
+  outline: none !important;
+  font-size: 16px !important;
+  background-color: #f2f2f2 !important;
+}
+
+.order__input:focus,
+.order__input:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.order__input::placeholder {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+}
+
+/* Select */
+.order__input--select {
+  appearance: none !important;
+  cursor: pointer !important;
+  width: 100% !important;
+}
+
+.order__input--select::-ms-expand {
+  display: none !important;
+}
+
+.order__select {
+  position: relative !important;
+  width: 100% !important;
+}
+
+/* Кнопка */
+.order__btn {
+  cursor: pointer !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 5px !important;
+  width: 100% !important;
+  min-height: 55px !important;
+  padding: 20px !important;
+  border-radius: 35px !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: #fff !important;
+  text-decoration: none !important;
+  line-height: 1.2 !important;
+  background-color: #388e3c !important;
+  transition: background-color 0.2s linear !important;
+}
+
+.order__btn:hover {
+  background-color: #2bac31 !important;
+}
+
+/* Footer та інформація */
+.order__footer,
+.order__info {
+  font-size: 14px !important;
+  text-align: center !important;
+  line-height: 1.3 !important;
+  color: #888 !important;
+}
+
+/* Медіа-запити */
+@media (min-width: 475px) {
+  .order__time {
+    font-size: 24px !important;
+  }
+  .order__price {
+    font-size: 24px !important;
+  }
+  .order__btn {
+    font-size: 18px !important;
+  }
+}
+
+@media (min-width: 576px) {
+  /* Твої додаткові стилі для великих екранів можна додати сюди */
+}
